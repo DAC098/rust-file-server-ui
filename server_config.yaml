@@ -1,0 +1,13 @@
+storage:
+  static:
+    directories:
+      "/static/": "./dst"
+    files:
+      "/static/blueprintjs/blueprint-icons.css": "./node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css"
+      "/static/blueprintjs/blueprint-modern.css": "./node_modules/@blueprintjs/core/lib/css/blueprint-modern.css"
+      "/static/blueprintjs/blueprint-popover2.css": "./node_modules/@blueprintjs/popover2/lib/css/blueprint-popover2.css"
+      "/static/blueprintjs/table-modern.css": "./node_modules/@blueprintjs/table/lib/css/table-modern.css"
+      "/static/normalize.css": "./node_modules/normalize.css/normalize.css"
+template:
+  directory: "./templates"
+  dev_mode: true

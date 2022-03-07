@@ -1,25 +1,24 @@
+import JSONLocal from "./json";
+
 export function request(method: string, url: string, json?: any) {
-    let full_url = new URL(url, "http://truth.dac098.com:11080");
-    let headers = {
-        "accept": "application/json"
-    };
+    let full_url = new URL(url, window.location.origin);
+    let headers = {"accept": "application/json"};
     let body = null;
 
     if (json != null) {
         headers["content-type"] = "application/json";
-        body  = JSON.stringify(json);
+        body  = JSONLocal.stringify(json);
     }
 
     fetch(full_url.toString(), {
         method,
         headers,
-        body,
-        mode: "no-cors"
+        body
     }).then(res => {
         console.log("code:", res.status, " ", res.statusText);
-        return res.json();
+        return res.text();
     }).then(json => {
-        console.log(json)
+        console.log(JSONLocal.parse(json))
     }).catch(err => {
         console.error(err);
     });

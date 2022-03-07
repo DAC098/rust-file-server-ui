@@ -11,14 +11,22 @@
   "license": "ISC",
   "dependencies": {
     "@blueprintjs/core": "^3.52.0",
+    "@blueprintjs/popover2": "^0.12.9",
+    "@blueprintjs/table": "^3.9.13",
+    "@reduxjs/toolkit": "^1.7.2",
+    "json-bigint": "^1.0.0",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
     "redux": "^4.1.2"
   },
   "devDependencies": {
+    "@types/json-bigint": "^1.0.1",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "sass": "^1.49.8",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.4",
     "webpack": "^5.65.0",
